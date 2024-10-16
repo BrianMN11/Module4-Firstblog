@@ -2,9 +2,14 @@
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-label, input, textarea, button {
-    margin: 5px 0;
+label, input, textarea {
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
 }

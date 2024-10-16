@@ -1,12 +1,21 @@
 const darkmodestyles = `
-    body.darkmmode {
-        background-color: #121212;
-        color: #ffffff
-    }
-    body.darkmode .post {
-       background-color: #1e1e1e;
-       border-color: #333333;
-    }
+   body.dark-mode {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #454545;
+}
+
+body.dark-mode article {
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+
+body.dark-mode .author {
+    color: #FFFFFF;
+}
        
     `;
 const styleSheet = document.createElement("style");

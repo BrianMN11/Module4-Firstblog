@@ -1,15 +1,23 @@
-document.getElementById('blog-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const username = document.getElementById("username").value;
-    const title = document.getElementById("blog-title").value;
-    const content = document.getElementById("blog-content").value;
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('blog-form');
 
-    if (username && title && content){
-        let blogPosts =JSON.parse(localStorage.getItem('blogPosts')) || [];
-        blogPosts.push({username, title, content});
-        localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
-        window.location.href ='blog.html';
-    } else {
-        alert('Please complete the form')
-    }
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const username = document.getElementById('username').value.trim();
+        const title = document.getElementById('blog-title').value.trim();
+        const content = document.getElementById('blog-content').value.trim();
+
+        if (!username || !title || !content) {
+            alert('Please complete all fields before submitting.');
+            return;
+        }
+
+        const blogPost = { username, title, content };
+        const existingPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
+        existingPosts.push(blogPost);
+        localStorage.setItem('blogPosts', JSON.stringify(existingPosts));
+
+        window.location.href = 'blog.html';
+    });
 });

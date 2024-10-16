@@ -1,14 +1,86 @@
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
+    background-color: #1b1bc3;
+    color: white;
     text-align: center;
-    margin: 20px 0;
+    padding: 1em;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    
 }
 
 footer {
+    background-color: #1b1bc3;
+    color: white;
     text-align: center;
-    margin-top: 20px;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer a {
+    color: #fff;
+    text-decoration:none;
+    font-weight: bold;
+}
+footer a:hover {
+    color: #FF00FF;
+    text-decoration:underline;
+    font-weight: bold;
+    
+}
+button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Blog Post Styles */
+#blog-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #454545;
+}
+
+body.dark-mode article {
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+
+body.dark-mode .author {
+    color: #FFFFFF;
 }
