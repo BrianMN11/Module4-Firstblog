@@ -42,10 +42,6 @@ THEN I am presented with a link to the developer's portfolio.
 
 The following images demonstrate the functionality of the web application
 
-This video shows data input and submission as well as dark mode and light mode toggle
-
-![Video shows website functionality](./images/myfirstblog.mp4)
-
 This is a still image of the homepage of the website 
 
 ![Picture of the homepage of my first blog](./images/homepage.png)
@@ -53,3 +49,7 @@ This is a still image of the homepage of the website
 This is a still image of the Blogposts page
 
 ![Picture of the blog post page with various blog post in light mode](./images/blogpostpage.png)
+
+This is a still image of the blogpost page in dark mode
+
+![Picture of the blog post page with various blog posts in dark mode](./images/blogpostdarkmode.png)
