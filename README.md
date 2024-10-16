@@ -11,7 +11,7 @@ SO THAT I can showcase my thoughts and experiences
 ```
 ## Acceptance Criteria
 
-``
+```
 GIVEN a personal blog
 WHEN I load the app,
 THEN I am presented with the landing page containing a form with labels and inputs for username, blog title, and blog content.
@@ -35,8 +35,7 @@ WHEN I take a closer look at a single blog entry in the list,
 THEN I can see the title, the content, and the author of the post.
 WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
-
-''
+```
 
 ## Mock Up 
 
